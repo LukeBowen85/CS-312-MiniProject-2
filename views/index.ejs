@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joke Generator</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Choose a Joke Category</h1>
+
+  <div class="button-container">
+    <form action="/joke/Any" method="get"><button type="submit">Any</button></form>
+    <form action="/joke/Misc" method="get"><button type="submit">Misc</button></form>
+    <form action="/joke/Programming" method="get"><button type="submit">Programming</button></form>
+    <form action="/joke/Dark" method="get"><button type="submit">Dark</button></form>
+    <form action="/joke/Pun" method="get"><button type="submit">Pun</button></form>
+    <form action="/joke/Spooky" method="get"><button type="submit">Spooky</button></form>
+    <form action="/joke/Christmas" method="get"><button type="submit">Christmas</button></form>
+  </div>
+
+  <hr>
+
+  <% if (joke) { %>
+    <h2>Here's your joke:</h2>
+    <p><%= joke %></p>
+  <% } %>
+
+  <% if (error) { %>
+    <h2 style="color: red;"><%= error %></h2>
+  <% } %>
+</body>
+</html>

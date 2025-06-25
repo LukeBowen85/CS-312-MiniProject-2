@@ -1,0 +1,48 @@
+body {
+    background-color: lightgrey;
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+hr {
+    margin: 40px;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+p {
+    text-align: center;
+    color: darkblue;
+    ;
+}
+
